@@ -1,0 +1,281 @@
+/*==== RESET ====*/
+
+.rem-reset {
+    font-size: 10px;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*==== CSS VARIABLES ====*/
+
+:root {
+    --PRIME-1: hsl(158, 36%, 37%);  /*Dark cyan*/
+    --PRIME-2: hsl(30, 38%, 92%);  /*Cream*/
+
+    --NEUTRAL-1: hsl(212, 21%, 14%);  /*Very dark blue*/
+    --NEUTRAL-2: hsl(228, 12%, 48%);  /*Dark grayish blue*/
+    --NEUTRAL-3: hsl(0, 0%, 100%);  /*White*/
+}
+
+
+/*==== LAYOUT ====*/
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    width: 345px;
+    height: 355px;
+}
+
+.image-container {
+    width: 345px;
+    height: 240px;
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.b-t-radius--10 {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.b-b-radius--10 {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.b-radius--10 {
+    border-radius: 1rem;
+}
+
+.p-l--10 {
+    padding-left: 1rem;
+}
+
+.p-l--20 {
+    padding-left: 2rem;
+}
+
+.p-l--30 {
+    padding-left: 3rem;
+}
+
+.p-r--10 {
+    padding-right: 1rem;;
+}
+
+.p-t--20 {
+    padding-top: 2rem;
+}
+
+.m-t--15 {
+    margin-top: 1.5rem;
+}
+
+.m-t--neg-1 {
+    margin-top: -1rem;
+}
+
+.w--290 {
+    width: 29rem;
+}
+
+.h--50 {
+    height: 5rem;
+}
+
+.top-span {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+
+/*==== COLOR SCHEME ====*/
+
+.b-g-color--prime-1 {
+    background-color: var(--PRIME-1);
+}
+
+.b-g-color--prime-2 {
+    background-color: var(--PRIME-2);
+}
+
+.b-g-color--neutral-3 {
+    background-color: var(--NEUTRAL-3);
+}
+
+.color--prime-1 {
+    color: var(--PRIME-1);
+}
+
+.color--neutral-2 {
+    color: var(--NEUTRAL-2);
+}
+
+.color--neutral-3 {
+    color: var(--NEUTRAL-3);
+}
+
+
+/*==== TYPOGRAPHY ====*/
+
+.f-fam--1 {
+    font-family: "montserrat", sans-serif;
+}
+
+.f-fam--2 {
+    font-family: "fraunces", sans-serif;
+}
+
+.f-s--12 {
+    font-size: 1.2rem;;
+}
+
+.f-s--14 {
+    font-size: 1.4rem;;
+}
+
+.f-s--32 {
+    font-size: 3.2rem;;
+}
+
+.f-upper {
+    text-transform: uppercase;
+}
+
+.f-strike {
+    text-decoration: line-through;
+}
+
+.f-w--700 {
+    font-weight: 700;
+}
+
+.l-h--1 {
+    line-height: 1;
+}
+
+.l-h--2-25 {
+    line-height: 2.25rem;
+}
+
+.letter-spacing--0-5 {
+    letter-spacing: 0.5rem;
+}
+
+
+/*==== MEDIA QUERIES ====*/
+
+@media screen and (min-width: 800px) {
+
+    /*==== LAYOUT ====*/
+    .main-container {
+        flex-direction: row;
+    }
+
+    .image-container {
+        width: 370px;
+        height: 550px;
+        background-image: url(images/image-product-desktop.jpg);
+    }
+
+    .text-container {
+        width: 370px;
+        height: 550px;
+    }
+
+    .b-l-radius--10 {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .b-r-radius--10 {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .m-t--20 {
+        margin-top: 2rem;
+    }
+
+    .m-t--35 {
+        margin-top: 3.5rem;
+    }
+
+    .h--55 {
+        height: 5.5rem;
+    }
+
+    .w--310 {
+        width: 31rem;
+    }
+
+    .p-r--30 {
+        padding-right: 3rem;
+    }
+
+    /*==== TYPOGRAPHY ====*/
+
+    .f-s--43 {
+        font-size: 4.3rem;;
+    }
+
+    .f-s--15 {
+        font-size: 1.5rem;
+    }
+
+    .f-s--16 {
+        font-size: 1.6rem;
+    }
+
+    .f-s--18 {
+        font-size: 1.8rem;
+    }
+
+    .l-h--2-75 {
+        line-height: 2.75rem;
+    }
+
+
+
+}
+
+
+/*==== DEBUG ====*/
+
+.debug {
+    outline: 1px solid red;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
